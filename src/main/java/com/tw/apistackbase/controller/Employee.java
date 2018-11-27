@@ -6,6 +6,10 @@ public class Employee {
     private Integer age;
     private String gender;
 
+    public Employee(){
+
+    }
+
     public Employee(String name, int age, String gender) {
         this.name = name;
         this.age = age;
