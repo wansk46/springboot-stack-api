@@ -1,23 +1,26 @@
 package com.tw.apistackbase.controller;
 
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+@Service
 public class EmpolyeeService {
-    private  List <Employee> employees;
+    private Map< Long, Employee> employees = new HashMap<Long, Employee>();
 
-    public EmpolyeeService(List<Employee> employees){
-        this.employees = new ArrayList<>();
-        this.employees.add(new Employee("testEmployee" ,15, "Female"));
+
+    public List<Employee> getAll(){
+        // map.values() return a Collection of all values in that map.
+        // new ArrayList<T>(collection) can create an array list containing all values in the collection.
+        return new ArrayList<Employee>(this.employees.values());
     }
 
-
-    public List <Employee> getAll(){
-        return this.employees;
+    public Employee create(Employee employees){
+        return null;
     }
 
-    public int createEmployee (Employee employee){
-        return
-    }
 
 }

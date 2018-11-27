@@ -12,6 +12,9 @@ public class Employee {
         this.gender = gender;
     }
 
+    public Integer getId(){
+        return this.id;
+    }
 
     public String getName(){
         return this.name;
@@ -25,6 +28,10 @@ public class Employee {
         return this.gender;
     }
 
+    public void setId(int id){
+        this.id = id;
+    }
+
     public void setName(String name){
         this.name = name;
     }
@@ -36,6 +43,8 @@ public class Employee {
     public void setGender(String gender){
         this.gender = gender;
     }
+
+
 
 
 
